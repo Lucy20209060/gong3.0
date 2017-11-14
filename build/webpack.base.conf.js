@@ -13,8 +13,10 @@ module.exports = {
     app: './src/main.js'
   },
   output: {
+     //../dist 用来存放打包后文件的输出目录
     path: config.build.assetsRoot,
     filename: '[name].js',
+    // 指定资源文件引用的目录 设置为”/”,表示当前路径
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
