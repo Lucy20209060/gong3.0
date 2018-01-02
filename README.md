@@ -48,3 +48,21 @@ iconFont:{
 	"粮油干货":'iconfont icon-liangyoufushi',
 	"活动专场":'iconfont icon-zuhelaixi'
 },
+
+
+abort终止正在进行的ajax请求 
+```javascript
+	var xhr = $.ajax({type:'POST',
+		url:'b.php',
+		data:'',
+		success:function(){
+			alert('ok');
+		}
+	})
+
+	$("#song").click(function(){
+        alert('click');
+		// 终止ajax请求
+        xhr.abort();
+    })
+```
